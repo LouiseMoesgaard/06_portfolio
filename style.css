@@ -13,8 +13,8 @@ html {
 
 
 section {
-    padding: 1rem;
-    max-width: 1200px;
+    padding: 3vw;
+    max-width: 1680px;
     margin: 0 auto;
     margin-bottom: 30px;
     /**sætter den i midten**/
@@ -25,14 +25,19 @@ section {
 
 }
 
+img {
+    width: 100%;
+}
+
 
 
 /** navigation **/
 
 nav {
-    height: 10vw;
+    height: 15vw;
     padding: 2vw;
     position: fixed;
+    top: 0;
     width: 100vw;
 }
 
@@ -65,6 +70,7 @@ nav ul:first-child > li:first-child {
 
 nav ul:first-child > li {
     font-size: 2rem;
+    line-height: 3vw;
 }
 
 nav ul:first-child ul li {
@@ -90,23 +96,266 @@ nav ul li a {
     cursor: pointer;
 }
 
+.logo {
+    width: 50vw;
+    position: relative;
+    top: 3vw;
+    display: inline-block;
+}
+
+#logo_desktop {
+    display: none;
+}
+
+/*** section landingpage ***/
+
+#landingpage {
+    margin-top: 5vw;
+}
+
+.splash_txt {
+    position: absolute;
+    bottom: 5vw;
+    right: 5vw;
+    text-align: right;
+}
+
+.splash_txt p {
+    font-size: 2rem;
+    margin-top: 1.2vw;
+}
+
+/** section about **/
+
+.sectionwrapper {
+    display: flex;
+    margin-top: 15vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#about_img {
+    flex-grow: 1;
+    flex-basis: 275px;
+}
+
+.text_flex {
+    flex-grow: 1;
+    flex-basis: 275px;
+    margin-top: 10vw;
+}
+
+.text_h1 {
+    margin-bottom: 2vw;
+}
+
+.edu_flex {
+    flex-basis: 100%;
+
+}
+
+.edu_text {
+    display: inline-block;
+}
+
+.about_h2 {
+    margin-top: 5vw;
+}
+
+.hob_h1 {
+    margin-top: 10vw;
+}
+
+
+#about .col {
+    max-height: 100vh;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 5vw;
+}
+
+#about .slides {
+    flex-wrap: nowrap;
+    position: relative;
+    align-items: flex-start;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.prev,
+.next {
+    display: block;
+}
+
+
+#about .slide {
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
+    flex-basis: 25vw;
+    flex-grow: 2;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    min-width: 100%;
+
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -50%;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 70px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+}
+
+.slide0 {
+    left: 0;
+}
+
+.slide1 {
+    left: -90vw;
+}
+
+.slide2 {
+    left: -180vw;
+}
+
+.slide3 {
+    left: -270vw;
+}
+
+.slide4 {
+    left: -360vw;
+}
+
+.slide5 {
+    left: -450vw;
+}
+
+.slide6 {
+    left: -540vw;
+}
+
+.slide7 {
+    left: -630vw;
+}
+
+.slide8 {
+    left: -720vw;
+}
+
+/*** section portfolio ***/
+
+.img {
+    flex-grow: 1;
+    flex-basis: 275px;
+}
+
+.btn_section {
+    flex-grow: 1;
+    flex-basis: 275px;
+}
+
+.colapse_btn {
+    margin: 10vw auto auto auto;
+    width: 100%;
+    height: 15vw;
+    padding-left: 1.5vw;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.colapse_btn.open {
+    height: auto;
+}
+
+.theme_flex h2 {
+    flex-basis: 88vw;
+    margin-bottom: 5vw;
+}
+
+.theme_flex h2:not(:first-child) {
+    margin-top: 5vw;
+}
+
+.resource_btn {
+    margin: 5vw auto auto auto;
+    width: 70%;
+    height: 15vw;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.theme_flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 
 /*** section "styletile" ***/
 
-h1,
-h2 {
+h1 {
     font-family: 'Lato', sans-serif;
-    /**font-size: ??; **/
+    font-size: 1.7rem;
     text-transform: uppercase;
     margin: 0;
     font-weight: 300;
     letter-spacing: 2px;
 }
 
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.about_h1 {
+    margin-top: 10vw;
+}
+
+.about_h2 {
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+h3:not(:first-child) {
+    margin-top: 10vw;
+}
+
+
 button_text {
     font-family: 'Lato', sans-serif;
-    /**font-size:??;**/
+    /**font-size: 3rem;**/
     text-transform: uppercase;
     margin: 0;
     font-weight: 300;
@@ -120,10 +369,30 @@ li,
 figure {
     font-family: 'Raleway', sans-serif;
     color: #313131;
-    /** font-size: ??; **/
+    font-size: 0.8rem;
     line-height: 1.4rem;
     margin: 0;
     font-weight: 200;
+}
+
+span {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 2px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    line-height: 15vw;
+}
+
+span i {
+    float: left;
+    line-height: 15vw !important;
+    font-size: 2rem;
 }
 
 #styletile .forklaring {
@@ -148,6 +417,10 @@ figure {
     background-color: #f3d3d1;
 }
 
+.color5 {
+    background-color: #5C5C5C;
+}
+
 
 .colors div {
     height: 100px;
@@ -158,8 +431,23 @@ figure {
 }
 
 @media only screen and (min-width: 600px) {
+
+    /** styletile **/
+
+    .about_h1 {
+        margin-top: 5vw !important;
+    }
+
+    p,
+    li,
+    figure {
+        font-size: 1rem;
+    }
+
+    /** navigation **/
     nav {
         padding: 1.5vw;
+        height: 6vw;
     }
 
     .nav_btn {
@@ -167,7 +455,8 @@ figure {
     }
 
     nav .menu {
-        display: block !important;
+        display: inline-block !important;
+        float: right;
         /**important overskriver alle andre regler - her overskrives hide-klassen**/
     }
 
@@ -179,8 +468,7 @@ figure {
         background-color: transparent !important;
         position: initial;
         padding: 0;
-        float: right;
-        width: 50vw;
+        width: 36.5vw;
 
     }
 
@@ -189,8 +477,10 @@ figure {
         margin-top: 0 !important;
         margin-bottom: 0 !important;
         display: inline;
-        margin-right: 5vw;
+    }
 
+    nav ul li:not(:last-child) {
+        margin-right: 3vw;
     }
 
     nav ul:first-child ul {
@@ -202,6 +492,7 @@ figure {
         top: 4.5vw;
         right: 3vw;
         margin: 0;
+        border-radius: 5px;
     }
 
     nav ul:first-child ul li {
@@ -209,5 +500,107 @@ figure {
         margin-right: 0;
         font-size: 0.9rem;
         margin-bottom: 1.2vw !important;
+        color: white;
+    }
+
+    #logo_mobile {
+        display: none;
+    }
+
+    #logo_desktop {
+        display: block;
+    }
+
+    .logo {
+        width: 10vw;
+        position: relative;
+        top: -1.2vw;
+        display: inline-block;
+    }
+
+    /** about **/
+    .sectionwrapper {
+        margin-top: 5vw;
+    }
+
+    .text_flex {
+        margin-left: 5vw;
+        margin-top: 0;
+    }
+
+    #decor {
+        margin-top: 2vw;
+        width: 15vw;
+        height: 30vw;
+        display: inline-block;
+    }
+
+
+    .edu_text {
+        vertical-align: top;
+        margin-top: 2vw;
+        display: inline-block;
+        margin-left: 5vw;
+    }
+
+
+    .about_h2:first-child {
+        margin-top: 0;
+    }
+
+    .hob_h1 {
+        margin-top: 5vw;
+    }
+
+
+    #about .col {
+        height: initial;
+        max-height: initial;
+        margin-top: 2vw;
+    }
+
+    #about .slides {
+        flex-wrap: wrap;
+    }
+
+
+    #about .slide {
+        margin: 1vw;
+        width: initial;
+        min-width: initial;
+    }
+
+
+    .prev,
+    .next {
+        display: none;
+    }
+
+    /** portfolio **/
+
+    .img {
+        height: 30vw;
+    }
+
+    .colapse_btn {
+        margin: 0 0 0 10%;
+        height: 5vw;
+        width: 90%;
+    }
+
+
+    .resource_btn {
+        margin: 2vw 10% auto auto;
+        height: 5vw;
+    }
+
+    span {
+        line-height: 5vw;
+    }
+
+    span i {
+        float: left;
+        line-height: 5vw !important;
+        font-size: 2rem;
     }
 }
