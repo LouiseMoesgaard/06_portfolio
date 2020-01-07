@@ -122,7 +122,7 @@ nav ul li a:hover {
 
 .splash {
     position: absolute;
-    top: 50vw;
+    top: 60vw;
     right: 3vw;
     width: 94vw;
 }
@@ -457,6 +457,17 @@ span i {
 
 @media only screen and (min-width: 600px) {
 
+    .splash {
+        position: absolute;
+        top: 15vw;
+        right: 3vw;
+    }
+
+    .splash_txt {
+        position: absolute;
+        bottom: 3vw;
+    }
+
     /** styletile **/
 
     .about_h1 {
@@ -571,8 +582,9 @@ span i {
     #decor {
         margin-top: 2vw;
         width: 15vw;
-        height: 30vw;
+        height: 31vw;
         display: inline-block;
+        border-radius: 15px;
     }
 
 
@@ -664,5 +676,4 @@ span i {
         margin-top: -6vw;
         padding-top: 6vw;
     }
-}
 }
